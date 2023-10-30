@@ -60,3 +60,9 @@ function check(string $string, array$service): string
 echo "result1:: ".$result1."<br>";
 echo "result:: ".$result2."<br>";
   ```
+##2
+##### sql
+2. Напишіть запит, який шукає неунікальні значення id в таблиці CREATE TABLE (id int not null, name text);
+```sql
+    SELECT id FROM table GROUP BY id HAVING COUNT(id)>1;
+ ```
